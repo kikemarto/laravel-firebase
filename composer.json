@@ -13,8 +13,7 @@
     ],
     "require": {
         "php": ">=5.6.4",
-        "laravel-notification-channels/backport": "dev-master",
-        "paragraph1/php-fcm": "*"
+        "laravel-notification-channels/backport": "dev-master"
     },
     "require-dev": {
         "mockery/mockery": "^0.9.5",
