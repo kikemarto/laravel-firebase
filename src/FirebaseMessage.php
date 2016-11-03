@@ -67,6 +67,13 @@ class FirebaseMessage
         return $this;
     }
 
+    public function priority($value = '2')
+    {
+        $this->notification->setPriority($value);
+
+        return $this;
+    }
+
     public function data(array $values = [])
     {
         $this->data = $values;
