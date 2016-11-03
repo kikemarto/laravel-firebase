@@ -56,6 +56,7 @@ class FirebaseChannel
         try {
             foreach ($devices as $device) {
                 $this->message->addRecipient(new Device($device))
+                    ->setPriority("high")
                     ->setNotification($firebase->notification)
                     ->setData($firebase->data);
 
