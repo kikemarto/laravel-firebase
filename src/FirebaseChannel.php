@@ -12,7 +12,7 @@ use RuntimeException;
 use UnexpectedValueException;
 use Illuminate\Notifications\Notification;
 
-class FirebaseChannel
+class FirebaseChannela
 {
 
     /**
@@ -56,9 +56,7 @@ class FirebaseChannel
         try {
             foreach ($devices as $device) {
                 $this->message->addRecipient(new Device($device))
-                    ->setNotification($firebase->notification)
                     ->setData($firebase->data);
-
                 $response = $this->client->send($this->message);
             }
         } catch (Exception $e) {
