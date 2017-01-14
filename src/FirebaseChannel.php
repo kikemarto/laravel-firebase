@@ -12,7 +12,7 @@ use RuntimeException;
 use UnexpectedValueException;
 use Illuminate\Notifications\Notification;
 
-class FirebaseChannela
+class FirebaseChannel
 {
 
     /**
