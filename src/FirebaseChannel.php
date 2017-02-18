@@ -70,7 +70,6 @@ class FirebaseChannel
                         $this->message->addRecipient(new Device($device))
                         ->setData($firebase->data)->setNotification($firebase->notification)->setContentAvailable(true);
                         $response = $this->client->send($this->message);
-                        print_r($response->getBody());
                     }
                 }
                 else
